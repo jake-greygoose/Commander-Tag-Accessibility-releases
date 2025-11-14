@@ -4,7 +4,7 @@ This is a very early build, not intended for public release, to be used and shar
 
 Change the color and add an outline to commander tags by modifying the texture.
 
-- Addon will be Nexus Addon loader only 
+- Addon will be Nexus addon loader only 
 - Source will remain private to prevent abuse.
  
 
@@ -19,4 +19,4 @@ Feel free to message me on discord @__unreal.
 No / only within the bounds of the original texture.
 
 **Can I Modify only the tag I'm following / Hide other tags?**
-No, all instances of easch texture are relpaced.
+No, all instances of each texture are replaced.
