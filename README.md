@@ -14,7 +14,7 @@ Loading through Arcdps is not well tested, please reach out if you experience is
 
 ### 1) Nexus
  1. Download `CommanderTagAccessibility.dll` from [Releases](https://github.com/jake-greygoose/Commander-Tag-Accessibility-releases/releases/latest) or [Cloudflare Mirror](https://69000000.xyz/CommanderTagAccessibility/latest/CommanderTagAccessibility.dll).
- 2. Place the dll in your game folder `\Addons`.
+ 2. Place the dll in your Addons folder `\Guild Wars 2\Addons`.
  3. Hotload in Nexus.
 
 ### 2) Arcdps
