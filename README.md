@@ -10,6 +10,11 @@ Loading through Arcdps is not well tested, please reach out if you experience is
 
 <img width="632" height="348" alt="image" src="https://github.com/user-attachments/assets/2fade35f-07f3-4dfb-8c70-863d7a882a2b" />
 
+## Extras
+
+In addition to commander tags, the addon also supports the mentor tag, squad markers, party target, and the chat background texture.
+I'll add any low hanging fruit that benefits from the existing outline / recolor pipeline as long as I deem it not to provide a competitive advantage.
+
 ## Installation
 
 ### 1) Nexus
@@ -25,7 +30,7 @@ Loading through Arcdps is not well tested, please reach out if you experience is
 # FAQ
 
 **Can I make the commander tag bigger?**
-No / only within the bounds of the original texture.
+No the icon cannot be scaled beyond the render area the game allocates.
 
 **Can I Modify only the tag I'm following / Hide other tags?**
 No, all instances of each texture are replaced.
