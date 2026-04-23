@@ -17,24 +17,32 @@ I'll add any low hanging fruit that benefits from the existing outline / recolor
 
 ## Installation
 
-### 1) Nexus
+### Nexus
  1. Download `CommanderTagAccessibility.dll` from [Releases](https://github.com/jake-greygoose/Commander-Tag-Accessibility-releases/releases/latest) or [Cloudflare Mirror](https://69000000.xyz/CommanderTagAccessibility/latest/CommanderTagAccessibility.dll).
  2. Place the dll in your Addons folder `\Guild Wars 2\Addons`.
  3. Hotload in Nexus.
 
-### 2) Arcdps
+### Arcdps
  1. Download `CommanderTagAccessibility.dll` from [Releases](https://github.com/jake-greygoose/Commander-Tag-Accessibility-releases/releases/latest) or [Cloudflare Mirror](https://69000000.xyz/CommanderTagAccessibility/latest/CommanderTagAccessibility.dll).
  2. Place the dll in your game folder `\Guild Wars 2`.
  3. Will load on next game start.
 
+### Standalone DLL Proxy
+ 1. Download `CommanderTagAccessibility.dll` from [Releases](https://github.com/jake-greygoose/Commander-Tag-Accessibility-releases/releases/latest) or [Cloudflare Mirror](https://69000000.xyz/CommanderTagAccessibility/latest/CommanderTagAccessibility.dll).
+ 2. Rename to `d3d9.dll` or `dxgi.dll.`
+ 3. Place the dll in your game folder `\Guild Wars 2`.
+ 4. Will load on next game start.
+
 # FAQ
+
+**I don't want to use Nexus or Arcdps, can I sill use it?**
+Yes follow the Standalone DLL Proxy installation instructions.
 
 **Can I make the commander tag bigger?**
 No the icon cannot be scaled beyond the render area the game allocates.
 
 **Can I Modify only the tag I'm following / Hide other tags?**
 No, all instances of each texture are replaced.
-
 
 ## Issues / Feedback
 
