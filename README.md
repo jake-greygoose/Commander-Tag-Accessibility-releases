@@ -46,4 +46,4 @@ No, all instances of each texture are replaced.
 
 ## Issues / Feedback
 
-Feel free to open an issue here or reach out to me on Discord @__Unreal
+Feel free to open an issue here or reach out to me on [Discord https://discord.com/invite/exfDSv3bux](https://discord.gg/exfDSv3bux) @__Unreal
