@@ -10,7 +10,7 @@ We think making the tag stand out benefits everyone.
 
 Customize commander tags with new colors, outlines, or patterns for better visibility and contrast.
 
-![In-game preview of the custom tag outlines and colors](https://cta-addon.org/cta-example.png)
+![In-game preview of the custom tag outlines and colors](website/cta-example.png)
 
 ---
 
@@ -21,14 +21,14 @@ Improve visibility against any background with a variety of high contrast outlin
 
 | Soft Outline | Sharp Outline | Double Outline | Glow Outline |
 | :---: | :---: | :---: | :---: |
-| ![Soft Outline](https://cta-addon.org/tag-outline.png) | ![Sharp Outline](https://cta-addon.org/tag-sharp-outline.png) | ![Double Outline](https://cta-addon.org/tag-double-outline.png) | ![Glow Outline](https://cta-addon.org/tag-glow-outline.png) |
+| ![Soft Outline](website/tag-outline.png) | ![Sharp Outline](website/tag-sharp-outline.png) | ![Double Outline](website/tag-double-outline.png) | ![Glow Outline](website/tag-glow-outline.png) |
 
 ### Custom Colors
 Each tag can be individually recolored, pick a palette that benefits your needs or suits your taste.
 
 | Cyan | Pink | Orange | Green |
 | :---: | :---: | :---: | :---: |
-| ![Cyan](https://cta-addon.org/tag-recolor-cyan.png) | ![Pink](https://cta-addon.org/tag-recolor-pink.png) | ![Orange](https://cta-addon.org/tag-recolor-orange.png) | ![Green](https://cta-addon.org/tag-recolor-green.png) |
+| ![Cyan](website/tag-recolor-cyan.png) | ![Pink](website/tag-recolor-pink.png) | ![Orange](website/tag-recolor-orange.png) | ![Green](website/tag-recolor-green.png) |
 
 ### Patterns
 Overlay distinct geometric patterns to quickly differentiate tags without relying on color alone.
@@ -44,7 +44,7 @@ Overlay distinct geometric patterns to quickly differentiate tags without relyin
 
 | Waves Pattern | Diagonal Pattern | Crosshatch Pattern | Horizontal Pattern |
 | :---: | :---: | :---: | :---: |
-| ![Waves Pattern](https://cta-addon.org/tag-pattern-waves.png) | ![Diagonal Pattern](https://cta-addon.org/tag-pattern-diagonal.png) | ![Crosshatch Pattern](https://cta-addon.org/tag-pattern-crosshatch.png) | ![Horizontal Pattern](https://cta-addon.org/tag-pattern-horizontal.png) |
+| ![Waves Pattern](website/tag-pattern-waves.png) | ![Diagonal Pattern](website/tag-pattern-diagonal.png) | ![Crosshatch Pattern](website/tag-pattern-crosshatch.png) | ![Horizontal Pattern](website/tag-pattern-horizontal.png) |
 
 ---
 
@@ -59,7 +59,7 @@ In addition to commander tags, the addon also supports:
 
 | Target Marker | Personal Target | Combined Target |
 | :---: | :---: | :---: |
-| ![Target Marker](https://cta-addon.org/target.png) | ![Personal Target](https://cta-addon.org/personal_target.png) | ![Combined Target](https://cta-addon.org/combined_target.png) |
+| ![Target Marker](website/target.png) | ![Personal Target](website/personal_target.png) | ![Combined Target](website/combined_target.png) |
 
 ---
 
@@ -98,7 +98,7 @@ Alternatively, the DLL can also be named `d3d11.dll` to support Nvidia Smooth Mo
 CTA is a texture mod, that hooks `PSSetShaderResource()` in order to modify specific game textures.
 Because it doesn't otherwise hook the game's memory it won't break between patches.
 
-![In-game settings user interface](https://cta-addon.org/cta-settings-ui.png)
+![In-game settings user interface](website/cta-settings-ui.png)
 </details>
 
 <details>
@@ -125,7 +125,7 @@ By loading CTA as `d3d11.dll` or `d3d11_chainload.dll`, we can enable NVIDIA Smo
 
 The addon allows for a 30% increase in size, it isn't possible to go any larger as the game doesn't allocate enough space for it.
 
-![Texture scaled to 1.3x the original size](https://cta-addon.org/quad-1.3-scale.png)
+![Texture scaled to 1.3x the original size](website/quad-1.3-scale.png)
 
 The tag size is further determined by in-game UI size and DPI scaling.
 </details>
@@ -180,12 +180,12 @@ Feel free to open an issue on [GitHub](https://github.com/jake-greygoose/Command
 
 <p align="center">
   <a href="https://github.com/jake-greygoose/Commander-Tag-Accessibility-releases" target="_blank" rel="noopener noreferrer">
-    <img src="github.svg" alt="GitHub" width="32" height="32" style="margin: 0 10px;">
+    <img src="website/github.svg" alt="GitHub" width="32" height="32" style="margin: 0 10px;">
   </a>
   <a href="https://crowdin.com/project/commander-tag-accessibility" target="_blank" rel="noopener noreferrer">
-    <img src="crowdin.svg" alt="Crowdin" width="32" height="32" style="margin: 0 10px;">
+    <img src="website/crowdin.svg" alt="Crowdin" width="32" height="32" style="margin: 0 10px;">
   </a>
   <a href="https://discord.gg/exfDSv3bux" target="_blank" rel="noopener noreferrer">
-    <img src="discord.svg" alt="Discord" width="32" height="32" style="margin: 0 10px;">
+    <img src="website/discord.svg" alt="Discord" width="32" height="32" style="margin: 0 10px;">
   </a>
 </p>
