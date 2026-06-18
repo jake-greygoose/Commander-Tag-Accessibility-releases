@@ -1,0 +1,444 @@
+/* =========================================
+   BASE STYLES (LIGHT MODE DEFAULT)
+   ========================================= */
+:root {
+  --accent-color: #c75c00;
+  --accent-glow: rgba(199, 92, 0, 0.08);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --accent-color: #f90;
+    --accent-glow: rgba(255, 153, 0, 0.08);
+  }
+}
+
+.subtitle {
+  font-size: 1.3rem; 
+  font-family: 'Georgia', serif; 
+  color: var(--accent-color); 
+  margin-top: 0.2em; 
+  margin-bottom: 1.5em; 
+  font-style: italic;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .footer-link:hover {
+    transform: none !important;
+  }
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Open Sans', -apple-system, sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  margin: 2em auto;
+  margin-bottom: 50px;
+  max-width: 52em;
+  padding: 0 1.5em;
+  font-size: 17px;
+  line-height: 1.7;
+}
+
+/* Editorial Serif Headings */
+h1, h2, h3, h4, summary {
+  font-family: 'Georgia', 'Times New Roman', serif;
+  color: #111;
+}
+
+h1 { 
+  font-size: 2.4rem; 
+  margin-top: 0;
+  margin-bottom: 0.2em; 
+}
+
+h2 { 
+  font-size: 1.8rem; 
+  border-bottom: 3px solid var(--accent-color); 
+  display: inline-block; 
+  padding-bottom: 5px; 
+}
+
+/* The var(--accent-color) Accent Links */
+a:link, a:visited {
+  color: #222;
+  text-decoration: none;
+  border-bottom: 2px dotted var(--accent-color); 
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover, a:active {
+  color: var(--accent-color);
+  border-bottom: 2px solid var(--accent-color); 
+}
+
+/* Highlight Color */
+::selection {
+  background-color: var(--accent-color);
+  color: #fff;
+}
+
+/* Blockquotes */
+blockquote {
+  background: #fff;
+  border-left: 6px solid var(--accent-color); 
+  margin: 2em 0;
+  padding: 1.2em 1.5em;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02); 
+  font-style: italic;
+}
+
+/* Details and Summary Cards */
+details {
+  background: #fff;
+  border: 1px solid #eaeaea;
+  padding: 10px 20px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+details:hover {
+  border-color: var(--accent-color);
+  box-shadow: 0 4px 12px var(--accent-glow); 
+}
+
+summary {
+  cursor: pointer;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+summary::marker {
+  color: var(--accent-color); 
+}
+
+/* Header */
+header {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+header b {
+  font-family: 'Georgia', serif;
+  font-size: 1.4rem;
+}
+
+.nav-links a {
+  margin-left: 20px;
+  font-weight: 600;
+  border-bottom: none;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  color: var(--accent-color);
+}
+
+/* Code Formatting (Updated for Light Mode) */
+code {
+  background-color: #f1f1f1; /* Soft light gray background */
+  color: var(--accent-color); /* Darker orange for better contrast on light mode */
+  font-family: monospace;
+  padding: 3px 6px;
+  border-radius: 4px;
+}
+
+pre {
+  background-color: #111;
+  padding: 15px;
+  border-radius: 6px;
+  overflow-x: auto;
+  border-left: 4px solid var(--accent-color);
+}
+
+pre code {
+  color: #eee; 
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Accessible Images & Figures */
+figure {
+  margin: 2.5em 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+figure img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px; 
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+}
+
+figcaption {
+  margin-top: 0.8em;
+  font-size: 0.95rem;
+  color: #555;
+  font-style: italic;
+  text-align: center;
+  font-family: 'Georgia', 'Times New Roman', serif;
+  max-width: 80%;
+}
+
+.pattern-list {
+  column-count: 2;
+  column-gap: 2em;
+  max-width: 400px;
+}
+
+.outline-preview-row, .pattern-preview-row, .recolor-preview-row, .preview-row {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 2.5em auto;
+  max-width: 35%;
+}
+
+.outline-preview-row img, .pattern-preview-row img, .recolor-preview-row img, .preview-row img {
+  flex: 0 1 22%;
+  min-width: 0;
+  height: auto;
+  border-radius: 6px; 
+  border: 1px solid #eaeaea;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  object-fit: contain;
+}
+
+
+/* =========================================
+   DARK MODE (TRIGGERS AUTOMATICALLY)
+   ========================================= */
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #141414;
+    color: #e0e0e0;
+  }
+  
+  h1, h2, h3, h4, summary {
+    color: #ffffff;
+  }
+  
+  a:link, a:visited {
+    color: #e0e0e0;
+  }
+  
+  blockquote, details {
+    background: #1e1e1e;
+    border-color: #333;
+  }
+  
+  header {
+    border-bottom-color: #333;
+  }
+
+  code {
+    background-color: #000000;
+    color: var(--accent-color); /* Bright orange returns for dark mode */
+  }
+
+  pre {
+    background-color: #000000;
+  }
+  
+  figure img {
+    border-color: #333;
+  }
+  
+  figcaption {
+    color: #aaa;
+  }
+}
+
+/* Footer & Social Links */
+footer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 0 20px;
+  margin-top: 40px;
+  border-top: 1px solid #ddd;
+}
+
+@media (prefers-color-scheme: dark) {
+  footer {
+    border-top-color: #333;
+  }
+}
+
+.footer-link {
+  border-bottom: none !important;
+  opacity: 0.7;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+  display: inline-flex;
+}
+
+.footer-link:hover {
+  opacity: 1;
+  border-bottom: none !important;
+  transform: translateY(-2px);
+}
+
+.footer-link img {
+  border: none;
+  box-shadow: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive Typography for Mobile */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1em;
+  }
+  
+  header {
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .outline-preview-row, .pattern-preview-row, .recolor-preview-row, .preview-row {
+    max-width: 90%;
+    gap: 8px;
+  }
+}
+
+.install-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 18px;
+  background-color: var(--accent-color);
+  color: #fff !important;
+  text-decoration: none !important;
+  border-radius: 4px;
+  font-weight: bold;
+  border-bottom: none !important;
+  transition: transform 0.1s, filter 0.2s;
+  font-family: 'Inter', 'Open Sans', sans-serif;
+}
+
+.install-button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+@media (prefers-color-scheme: dark) {
+  .install-button {
+    color: #111 !important;
+  }
+}
+
+/* CSS Lightbox (No JS) */
+.lightbox-trigger {
+  cursor: zoom-in;
+  display: block;
+}
+
+.lightbox-trigger img {
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.lightbox-trigger:hover img {
+  transform: scale(1.01);
+  filter: brightness(1.03);
+}
+
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox:target {
+  display: flex;
+}
+
+/* Backdrop closes lightbox on click */
+.lightbox-backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.85);
+  cursor: zoom-out;
+  border-bottom: none !important;
+}
+
+.lightbox-content-container {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  z-index: 10001;
+}
+
+.lightbox-content-container img {
+  max-width: 100%;
+  max-height: 90vh;
+  display: block;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.lightbox-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff !important;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  line-height: 1;
+  text-decoration: none;
+  border-bottom: none !important;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.lightbox-close-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+  color: var(--accent-color) !important;
+  transform: scale(1.05);
+}
