@@ -10,7 +10,7 @@ We think making the tag stand out benefits everyone.
 
 Customize commander tags with new colors, outlines, or patterns for better visibility and contrast.
 
-![In-game preview of the custom tag outlines and colors](website/cta-example.png)
+![In-game preview of the custom tag outlines and colors](website/cta-example.webp)
 
 ---
 
@@ -21,14 +21,14 @@ Improve visibility against any background with a variety of high contrast outlin
 
 | Soft Outline | Sharp Outline | Double Outline | Glow Outline |
 | :---: | :---: | :---: | :---: |
-| ![Soft Outline](website/tag-outline.png) | ![Sharp Outline](website/tag-sharp-outline.png) | ![Double Outline](website/tag-double-outline.png) | ![Glow Outline](website/tag-glow-outline.png) |
+| ![Soft Outline](website/tag-outline.webp) | ![Sharp Outline](website/tag-sharp-outline.webp) | ![Double Outline](website/tag-double-outline.webp) | ![Glow Outline](website/tag-glow-outline.webp) |
 
 ### Custom Colors
 Each tag can be individually recolored, pick a palette that benefits your needs or suits your taste.
 
 | Cyan | Pink | Orange | Green |
 | :---: | :---: | :---: | :---: |
-| ![Cyan](website/tag-recolor-cyan.png) | ![Pink](website/tag-recolor-pink.png) | ![Orange](website/tag-recolor-orange.png) | ![Green](website/tag-recolor-green.png) |
+| ![Cyan](website/tag-recolor-cyan.webp) | ![Pink](website/tag-recolor-pink.webp) | ![Orange](website/tag-recolor-orange.webp) | ![Green](website/tag-recolor-green.webp) |
 
 ### Patterns
 Overlay distinct geometric patterns to quickly differentiate tags without relying on color alone.
@@ -44,7 +44,7 @@ Overlay distinct geometric patterns to quickly differentiate tags without relyin
 
 | Waves Pattern | Diagonal Pattern | Crosshatch Pattern | Horizontal Pattern |
 | :---: | :---: | :---: | :---: |
-| ![Waves Pattern](website/tag-pattern-waves.png) | ![Diagonal Pattern](website/tag-pattern-diagonal.png) | ![Crosshatch Pattern](website/tag-pattern-crosshatch.png) | ![Horizontal Pattern](website/tag-pattern-horizontal.png) |
+| ![Waves Pattern](website/tag-pattern-waves.webp) | ![Diagonal Pattern](website/tag-pattern-diagonal.webp) | ![Crosshatch Pattern](website/tag-pattern-crosshatch.webp) | ![Horizontal Pattern](website/tag-pattern-horizontal.webp) |
 
 ---
 
@@ -53,13 +53,15 @@ In addition to commander tags, the addon also supports:
 * Mentor Tag
 * Party Target
 * Squad Markers
-* AOE circle outlines
+* AOE Circle Outlines
 * Chat Background
+* Necromancer Shroud Screen Border
+* WvW Map Objective Icons
 * Plus more markers to come
 
 | Target Marker | Personal Target | Combined Target |
 | :---: | :---: | :---: |
-| ![Target Marker](website/target.png) | ![Personal Target](website/personal_target.png) | ![Combined Target](website/combined_target.png) |
+| ![Target Marker](website/target.webp) | ![Personal Target](website/personal_target.webp) | ![Combined Target](website/combined_target.webp) |
 
 ---
 
@@ -98,7 +100,7 @@ Alternatively, the DLL can also be named `d3d11.dll` to support Nvidia Smooth Mo
 CTA is a texture mod, that hooks `PSSetShaderResource()` in order to modify specific game textures.
 Because it doesn't otherwise hook the game's memory it won't break between patches.
 
-![In-game settings user interface](website/cta-settings-ui.png)
+![In-game settings user interface](website/cta-settings-ui.webp)
 </details>
 
 <details>
@@ -125,7 +127,7 @@ By loading CTA as `d3d11.dll` or `d3d11_chainload.dll`, we can enable NVIDIA Smo
 
 The addon allows for a 30% increase in size, it isn't possible to go any larger as the game doesn't allocate enough space for it.
 
-![Texture scaled to 1.3x the original size](website/quad-1.3-scale.png)
+![Texture scaled to 1.3x the original size](website/quad-1.3-scale.webp)
 
 The tag size is further determined by in-game UI size and DPI scaling.
 </details>
@@ -157,6 +159,7 @@ We have taken great care not to add anything that might be considered a competit
 ## Changelog
 
 ### June 2026
+* Added Necromancer screen border under Extras
 * Added support for [GW2Load](https://github.com/gw2load/GW2Load) addon loader
 * Added recoloring for WvW map objectives
 
