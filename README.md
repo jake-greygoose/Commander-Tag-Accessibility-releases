@@ -68,6 +68,8 @@ In addition to commander tags, the addon also supports:
 ## Installation
 
 ### Nexus
+Now available from the [Nexus Library](https://raidcore.gg/gw2/addons/commander-tag-accessibility).
+
 1. Download [CommanderTagAccessibility.dll](https://download.cta-addon.org/CommanderTagAccessibility.dll).
 2. Place the dll in your Addons folder `\Guild Wars 2\Addons`.
 3. Hotload in Nexus.
@@ -87,7 +89,7 @@ In addition to commander tags, the addon also supports:
 2. Place the dll in your game folder `\Guild Wars 2`.
 3. Will load on next game start.
 
-Alternatively, the DLL can also be named `d3d11.dll` to support Nvidia Smooth Motion.
+Alternatively, the DLL can also be named `dxgi.dll` or `d3d11.dll` to support Nvidia Smooth Motion.
 
 ---
 
@@ -116,9 +118,9 @@ We aim to support all the popular addon loaders, CTA also works great standalone
 <summary><strong>Does the addon support Nvidia Smooth Motion?</strong></summary>
 <br>
 
-[NVIDIA Smooth Motion](https://nvidia.custhelp.com/app/answers/detail/a_id/5621/~/enabling-smooth-motion-in-nvidia-app) works great with Guild Wars 2, however it isn't widely used because it is incompatible with both ArcDPS & Nexus.
+Yes. [NVIDIA Smooth Motion](https://nvidia.custhelp.com/app/answers/detail/a_id/5621/~/enabling-smooth-motion-in-nvidia-app) works great with Guild Wars 2, and is fully compatible with CTA, ArcDPS, and Nexus.
 
-By loading CTA as `d3d11.dll` or `d3d11_chainload.dll`, we can enable NVIDIA Smooth Motion for this addon while also chainloading ArcDPS & Nexus to make them compatible.
+To use Smoothmotion with standalone CTA, load as `dxgi.dll`, `d3d11.dll`, or `d3d11_chainload.dll` if another addon is already occupying `d3d11.dll`.
 </details>
 
 <details>
@@ -157,6 +159,11 @@ We have taken great care not to add anything that might be considered a competit
 ---
 
 ## Changelog
+
+### July 2026
+* Added to the [Nexus Addon Library](https://raidcore.gg/gw2/addons/commander-tag-accessibility)
+* Added Ally & Enemy Health Bar colors under Extras
+* Improved WvW team recoloring to include player indicators when using simple name plates
 
 ### June 2026
 * Added Necromancer screen border under Extras

@@ -146,6 +146,7 @@
         <h2 id="installation">Installation</h2>
 
         <h3>Nexus</h3>
+        Now available from the <a href="https://raidcore.gg/gw2/addons/commander-tag-accessibility">Nexus Library</a>
         <ol>
             <li>Download <a
                     href="https://download.cta-addon.org/CommanderTagAccessibility.dll">CommanderTagAccessibility.dll</a>.
@@ -179,7 +180,8 @@
             <li>Place the dll in your game folder <code>\Guild Wars 2</code>.</li>
             <li>Will load on next game start.</li>
         </ol>
-        <p>Alternatively, the DLL can also be named <a href="https://download.cta-addon.org/d3d11.dll">d3d11.dll</a> to
+        <p>Alternatively, the DLL can also be named <a href="https://download.cta-addon.org/dxgi.dll">dxgi.dll</a> or <a
+                href="https://download.cta-addon.org/d3d11.dll">d3d11.dll</a> to
             support <a
                 href="https://nvidia.custhelp.com/app/answers/detail/a_id/5621/~/enabling-smooth-motion-in-nvidia-app"
                 target="_blank" rel="noopener noreferrer">NVIDIA Smooth Motion</a>.</p>
@@ -198,8 +200,8 @@
             <figure>
                 <a href="#settings-lightbox" class="lightbox-trigger"
                     aria-label="Enlarge settings interface screenshot">
-                    <img src="cta-settings-ui.webp" alt="In-game settings user interface for Commander Tag Accessibility"
-                        loading="lazy">
+                    <img src="cta-settings-ui.webp"
+                        alt="In-game settings user interface for Commander Tag Accessibility" loading="lazy">
                 </a>
                 <figcaption>In-game settings user interface. Click to enlarge.</figcaption>
             </figure>
@@ -229,13 +231,14 @@
             <summary>
                 <span style="display: inline-block;">Does the addon support Nvidia Smooth Motion?</span>
             </summary>
-            <p style="margin-top: 10px;"><a
+            <p style="margin-top: 10px;">Yes. <a
                     href="https://nvidia.custhelp.com/app/answers/detail/a_id/5621/~/enabling-smooth-motion-in-nvidia-app"
                     target="_blank" rel="noopener noreferrer">NVIDIA Smooth Motion</a> works great with Guild Wars 2,
-                however it isn't widely used because it is incompatible with both ArcDPS &amp; Nexus.</p>
-            <p style="margin-top: 10px;">By loading CTA as <code>d3d11.dll</code> or <code>d3d11_chainload.dll</code>,
-                we can enable NVIDIA Smooth Motion for this addon while also chainloading ArcDPS &amp; Nexus to make
-                them compatible.</p>
+                and is fully compatible with CTA, ArcDPS, and Nexus.</p>
+            <p style="margin-top: 10px;">To use Smoothmotion with standalone CTA, load as <code>dxgi.dll</code>,
+                <code>d3d11.dll</code>, or <code>d3d11_chainload.dll</code> if another addon is already occupying
+                <code>d3d11.dll</code>.
+            </p>
         </details>
 
         <details id="faq-increase-size">
@@ -287,6 +290,14 @@
         </details>
 
         <h2>Changelog</h2>
+
+        <h3>July 2026</h3>
+        <ul>
+            <li>Added to the <a href="https://raidcore.gg/gw2/addons/commander-tag-accessibility" target="_blank"
+                    rel="noopener noreferrer">Nexus Addon Library</a></li>
+            <li>Added Ally & Enemy Health Bar colors under Extras</li>
+            <li>Improved WvW team recoloring to include player indicators when using simple name plates</li>
+        </ul>
 
         <h3>June 2026</h3>
         <ul>
@@ -388,7 +399,7 @@
       "name": "Does the addon support Nvidia Smooth Motion?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Nvidia Smooth Motion works great with Guild Wars 2, however it isn't widely used because it is incompatible with both ArcDPS & Nexus. By loading CTA as d3d11.dll or d3d11_chainload.dll, we can enable NVIDIA Smooth Motion for this addon while also chainloading ArcDPS & Nexus to make them compatible."
+        "text": "Yes. NVIDIA Smooth Motion works great with Guild Wars 2, and is fully compatible with CTA, ArcDPS, and Nexus. To use Smoothmotion with standalone CTA, load as dxgi.dll, d3d11.dll, or d3d11_chainload.dll if another addon is already occupying d3d11.dll."
       }
     },
     {
