@@ -23,12 +23,18 @@ Improve visibility against any background with a variety of high contrast outlin
 | :---: | :---: | :---: | :---: |
 | ![Soft Outline](website/tag-outline.webp) | ![Sharp Outline](website/tag-sharp-outline.webp) | ![Double Outline](website/tag-double-outline.webp) | ![Glow Outline](website/tag-glow-outline.webp) |
 
-### Custom Colors
+### Custom Colors & Gradients
 Each tag can be individually recolored, pick a palette that benefits your needs or suits your taste.
 
 | Cyan | Pink | Orange | Green |
 | :---: | :---: | :---: | :---: |
 | ![Cyan](website/tag-recolor-cyan.webp) | ![Pink](website/tag-recolor-pink.webp) | ![Orange](website/tag-recolor-orange.webp) | ![Green](website/tag-recolor-green.webp) |
+
+| Blue Gradient | Cyan Gradient | Green Gradient | Red Gradient |
+| :---: | :---: | :---: | :---: |
+| ![Blue Gradient](website/tag-gradient-blue.webp) | ![Cyan Gradient](website/tag-gradient-cyan.webp) | ![Green Gradient](website/tag-gradient-green.webp) | ![Red Gradient](website/tag-gradient-red.webp) |
+
+![Gradient picker settings](website/gradient-picker.webp)
 
 ### Patterns
 Overlay distinct geometric patterns to quickly differentiate tags without relying on color alone.
@@ -159,6 +165,9 @@ We have taken great care not to add anything that might be considered a competit
 ---
 
 ## Changelog
+
+### August 2026
+* Added custom gradients to commander tags
 
 ### July 2026
 * Added to the [Nexus Addon Library](https://raidcore.gg/gw2/addons/commander-tag-accessibility)
